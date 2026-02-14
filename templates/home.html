@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songcord - AI Music Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles/global.css">
+</head>
+<body>
+    <aside>
+        <div class="logo"><i class="fas fa-wave-square" style="color: var(--text-main);"></i> Songcord</div>
+        <nav>
+            <a href="#" class="active"><i class="fas fa-compass"></i> Explore</a>
+            <a href="#"><i class="fas fa-plus-circle"></i> Create</a>
+            <a href="#"><i class="fas fa-book"></i> Library</a>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="create-section">
+            <div class="input-container">
+                <textarea placeholder="Song description (e.g., A synthwave track about coding in the rain)"></textarea>
+                <div class="controls">
+                    <div class="toggles">
+                        <label style="color: var(--text-muted); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                            <i class="fas fa-sliders-h"></i> Custom Mode
+                        </label>
+                    </div>
+                    <button class="btn-create">Create</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="feed-header">Trending</h2>
+            <div class="song-grid">
+                <!-- Card 1 -->
+                <div class="song-card">
+                    <div class="card-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-btn"></i></div>
+                    </div>
+                    <div class="card-info">
+                        <div class="song-title">Neon Cyberpunk City</div>
+                        <div class="song-meta">
+                            <span>@lance_coder</span>
+                            <span><i class="fas fa-play" style="font-size: 0.7rem;"></i> 12k</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="song-card">
+                    <div class="card-img" style="background: linear-gradient(45deg, #11998e, #38ef7d);">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-btn"></i></div>
+                    </div>
+                    <div class="card-info">
+                        <div class="song-title">Acoustic Morning</div>
+                        <div class="song-meta">
+                            <span>@melody_maker</span>
+                            <span><i class="fas fa-play" style="font-size: 0.7rem;"></i> 8.5k</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="song-card">
+                    <div class="card-img" style="background: linear-gradient(45deg, #833ab4, #fd1d1d);">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-btn"></i></div>
+                    </div>
+                    <div class="card-info">
+                        <div class="song-title">Heavy Metal Thunder</div>
+                        <div class="song-meta">
+                            <span>@rockstar_ai</span>
+                            <span><i class="fas fa-play" style="font-size: 0.7rem;"></i> 24k</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 4 -->
+                 <div class="song-card">
+                    <div class="card-img" style="background: linear-gradient(45deg, #fc4a1a, #f7b733);">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-btn"></i></div>
+                    </div>
+                    <div class="card-info">
+                        <div class="song-title">Lo-Fi Study Beats</div>
+                        <div class="song-meta">
+                            <span>@chill_vibes</span>
+                            <span><i class="fas fa-play" style="font-size: 0.7rem;"></i> 45k</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="player-bar">
+        <div style="display: flex; align-items: center; gap: 1rem; width: 30%;">
+            <div style="width: 48px; height: 48px; background: #333; border-radius: 4px;"></div>
+            <div>
+                <div style="font-weight: 600; font-size: 0.9rem;">Select a song</div>
+                <div style="color: var(--text-muted); font-size: 0.8rem;">--:--</div>
+            </div>
+        </div>
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center; gap: 1.5rem; font-size: 1.2rem;">
+            <i class="fas fa-step-backward" style="cursor: pointer; color: var(--text-muted);"></i>
+            <div style="background: white; color: black; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <i class="fas fa-play" style="margin-left: 3px;"></i>
+            </div>
+            <i class="fas fa-step-forward" style="cursor: pointer; color: var(--text-muted);"></i>
+        </div>
+        <div style="width: 30%; display: flex; justify-content: flex-end; gap: 1rem; color: var(--text-muted);">
+            <i class="fas fa-volume-up" style="cursor: pointer;"></i>
+        </div>
+    </div>
+</body>
+</html>
